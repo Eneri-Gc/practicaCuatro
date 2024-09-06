@@ -1,0 +1,12 @@
+class Triangulo:
+	"""Define un Triangulo según su base y su altura."""
+	def __init__(self, b, h):
+		self.b = b
+		self.h = h
+
+		r=(self.b * self.h)/2
+		return r
+ba=float(input(" Escribe la base "))
+ha=float(input(" Escribe la altura "))
+triangulo = Triangulo(ba, ha)
+print("Área del triangulo que tiene una base de :",ba," altura ",ha," su area es: ", triangulo.area())
